@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tapasvi Dudhrejiya - Technical Implementation Engineer</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        
+        .resume-container {
+            background-color: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%);
+            color: white;
+            padding: 30px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .name-title h1 {
+            margin: 0;
+            font-size: 32px;
+            font-weight: 700;
+        }
+        
+        .name-title h2 {
+            margin: 5px 0 0;
+            font-size: 18px;
+            font-weight: 400;
+            opacity: 0.9;
+        }
+        
+        .contact-info {
+            text-align: right;
+        }
+        
+        .contact-info div {
+            margin-bottom: 5px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        
+        .contact-info i {
+            margin-left: 8px;
+            font-size: 16px;
+        }
+        
+        .section {
+            padding: 25px 40px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .section:last-child {
+            border-bottom: none;
+        }
+        
+        .section-title {
+            color: #4b6cb7;
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-title i {
+            margin-right: 10px;
+        }
+        
+        .summary {
+            font-size: 15px;
+            line-height: 1.7;
+        }
+        
+        .experience-item, .project-item {
+            margin-bottom: 20px;
+        }
+        
+        .job-title {
+            font-weight: 600;
+            font-size: 17px;
+            color: #182848;
+            margin-bottom: 5px;
+        }
+        
+        .company-time {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .job-description {
+            font-size: 14px;
+            padding-left: 15px;
+        }
+        
+        .job-description li {
+            margin-bottom: 8px;
+        }
+        
+        .project-highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .project-card {
+            background: #f5f7fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #4b6cb7;
+        }
+        
+        .project-title {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #182848;
+        }
+        
+        .project-duration {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        
+        .project-description {
+            font-size: 14px;
+        }
+        
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .skill-category {
+            flex: 1;
+            min-width: 200px;
+        }
+        
+        .skill-category h4 {
+            margin-bottom: 10px;
+            color: #182848;
+        }
+        
+        .skill-tag {
+            display: inline-block;
+            background: #eef2f8;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            margin: 0 5px 5px 0;
+        }
+        
+        .education-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        
+        .education-degree {
+            font-weight: 600;
+        }
+        
+        .education-meta {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .achievements-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        
+        .achievement-item {
+            background: #f5f7fa;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+        
+        .achievement-item strong {
+            color: #182848;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="resume-container">
+        <div class="header">
+            <div class="name-title">
+                <h1>TAPASVI DUDHREJIYA</h1>
+                <h2>Technical Implementation Engineer</h2>
+            </div>
+            <div class="contact-info">
+                <div><i class="fas fa-map-marker-alt"></i> Ahmedabad, Gujarat</div>
+                <div><i class="fas fa-envelope"></i> dudhrejiyatapasvi@gmail.com</div>
+                <div><i class="fas fa-phone"></i> +91 85306 61583</div>
+                <div><i class="fab fa-linkedin"></i> LinkedIn</div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">
+                <i class="fas fa-user-tie"></i> PROFESSIONAL SUMMARY
+            </div>
+            <div class="summary">
+                Results-driven Technical Implementation Engineer with 2.5+ years of experience in GA4, GTM, server-side tagging, and data-driven marketing tech. Adept at implementing scalable tracking solutions across web and mobile platforms, building Looker dashboards, and integrating ad platforms. Known for ensuring data integrity, troubleshooting complex tag structures, and maximizing campaign ROI through accurate measurement framework.
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">
+                <i class="fas fa-briefcase"></i> EXPERIENCE
+            </div>
+            <div class="experience-item">
+                <div class="job-title">Technical Analyst</div>
+                <div class="company-time">
+                    <span>Dataslush – Ahmedabad, Gujarat</span>
+                    <span>Jul 2022 – Present</span>
+                </div>
+                <ul class="job-description">
+                    <li>Led GA4, GTM, and server-side tagging implementations across clients from D2C, healthcare, education, and manufacturing domains.</li>
+                    <li>Built data layers and validated events using Chrome DevTools, Tag Assistant, and Omnibug.</li>
+                    <li>Created Looker Studio dashboards for campaign and funnel analytics; integrated marketing tags (Meta Pixel, Google Ads, VWO).</li>
+                    <li>Improved tagging governance via audits and implemented documentation for stakeholders.</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">
+                <i class="fas fa-tasks"></i> SELECT PROJECT HIGHLIGHTS
+            </div>
+            <div class="project-highlights">
+                <div class="project-card">
+                    <div class="project-title">Digital Marketing Agency (Ongoing)</div>
+                    <div class="project-description">Implemented GA4, GTM, and server-side tagging; reduced ad blocker data loss by 18%, improved LinkedIn ROAS.</div>
+                </div>
+                <div class="project-card">
+                    <div class="project-title">Healthcare Provider (2022–23)</div>
+                    <div class="project-description">Led site-wide tracking and dashboarding; increased lead attribution accuracy by 30%.</div>
+                </div>
+                <div class="project-card">
+                    <div class="project-title">University K12 Learning Platform (2023)</div>
+                    <div class="project-description">Built GA4 Advance event tracking and Looker dashboards for a K12 learning tool; led to a 15% boost in session time.</div>
+                </div>
+                <div class="project-card">
+                    <div class="project-title">Marketing Technology (2023–24)</div>
+                    <div class="project-description">Integrated Snapchat CAPI and GA4; improved ad attribution by 22%.</div>
+                </div>
+                <div class="project-card">
+                    <div class="project-title">Global Manufacturer (2023)</div>
+                    <div class="project-description">Unified subdomain tracking via modular GTM; improved funnel visibility and session continuity.</div>
+                </div>
+                <div class="project-card">
+                    <div class="project-title">Consumer Electronics (Cooling Appliances) (2024–25)</div>
+                    <div class="project-description">Setup GA4 Enhanced Ecommerce and unified dashboards; supported 17% uplift in attribution accuracy.</div>
+                </div>
+                <div class="project-card">
+                    <div class="project-title">EMI Gateway Provider (2025–Present)</div>
+                    <div class="project-description">Deployed GA4 Enhanced Ecommerce across gateway flow; improved drop-off recovery by 8%.</div>
+                </div>
+                <div class="project-card">
+                    <div class="project-title">Learning Cloud (2025–Present)</div>
+                    <div class="project-description">Enabled student interaction tracking; led to a 20% rise in content completion rates.</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">
+                <i class="fas fa-tools"></i> SKILLS & TOOLS
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h4>Tracking & Analytics</h4>
+                    <div>
+                        <span class="skill-tag">GA4</span>
+                        <span class="skill-tag">GTM (Web + Server)</span>
+                        <span class="skill-tag">Datalayer</span>
+                        <span class="skill-tag">BigQuery</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">Meta Pixel</span>
+                        <span class="skill-tag">VWO</span>
+                        <span class="skill-tag">Looker Studio</span>
+                        <span class="skill-tag">Cookie Consent Implementation</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Technologies</h4>
+                    <div>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Google Apps Script</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">CSS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Soft Skills</h4>
+                    <div>
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Data Visualization</span>
+                        <span class="skill-tag">Critical Thinking</span>
+                        <span class="skill-tag">Documentation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">
+                <i class="fas fa-graduation-cap"></i> EDUCATION & CERTIFICATIONS
+            </div>
+            <div class="education-item">
+                <div>
+                    <div class="education-degree">B.Sc. Mathematics</div>
+                    <div class="education-meta">Kamani Science College, Amreli</div>
+                </div>
+                <div class="education-meta">2018–2022</div>
+            </div>
+            <div class="education-item">
+                <div>
+                    <div class="education-degree">Google Analytics Individual Qualification (GAIQ)</div>
+                </div>
+            </div>
+            <div class="education-item">
+                <div>
+                    <div class="education-degree">BigQuery Certification</div>
+                    <div class="education-meta">Simo Ahava</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">
+                <i class="fas fa-trophy"></i> ACHIEVEMENTS
+            </div>
+            <div class="achievements-list">
+                <div class="achievement-item">
+                    <strong>Employee of the Quarter</strong> – Dataslush
+                </div>
+                <div class="achievement-item">
+                    <strong>Winner, Hackathon 2024</strong> – Developed automated content generator using OpenAI & Apps Script
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // You can use this script to print/save as PDF
+        function printPDF() {
+            window.print();
+        }
+        
+        // Uncomment to add a print button if needed
+        // document.addEventListener('DOMContentLoaded', function() {
+        //     var printBtn = document.createElement('button');
+        //     printBtn.textContent = 'Save as PDF';
+        //     printBtn.style.position = 'fixed';
+        //     printBtn.style.bottom = '20px';
+        //     printBtn.style.right = '20px';
+        //     printBtn.style.padding = '10px 15px';
+        //     printBtn.style.background = '#4b6cb7';
+        //     printBtn.style.color = 'white';
+        //     printBtn.style.border = 'none';
+        //     printBtn.style.borderRadius = '5px';
+        //     printBtn.style.cursor = 'pointer';
+        //     printBtn.addEventListener('click', printPDF);
+        //     document.body.appendChild(printBtn);
+        // });
+    </script>
+</body>
+</html>
